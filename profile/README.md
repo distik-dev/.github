@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="./assets/hero.png" alt="Distik — AI code review that reads the PR, not the diff" width="100%" />
+  <img src="./assets/hero.png" alt="Distik — see every PR's blast radius before you merge" width="100%" />
 </p>
 
 <h1 align="center">Distik</h1>
 
 <p align="center">
-  <strong>AI code review that reads the PR, not the diff.</strong>
+  <strong>See every PR's blast radius before you merge.</strong>
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ---
 
-Reviewing a 2,000-line AI-generated pull request by skimming a flat diff misses intent, risk, and the dependency order between changes. Distik replaces that workflow with a structured review surface: it ingests every PR, decomposes it into chapters labeled with intent and risk, and lets you approve per chapter.
+Reviewing a 2,000-line AI-generated pull request by skimming a flat diff misses intent, risk, and the dependency order between changes. Distik replaces that workflow with a structured review surface — every PR is decomposed into named, dependency-ordered chapters with intent and risk, then layered with a files heatmap, per-chapter diagrams, and a single merge-confidence number so a busy reviewer can read the change at a glance.
 
 Distik never trains on your code. Source diffs are sent to Anthropic for chapter generation under contractual no-training terms; structured chapter analysis is cached, raw diffs are not.
 
@@ -25,10 +25,10 @@ Distik never trains on your code. Source diffs are sent to Anthropic for chapter
 
 | | |
 |---|---|
-| **Chapter decomposition** | Every PR is broken into 4–8 dependency-ordered chapters, each with a one-line intent and a risk label. |
-| **Per-chapter approval** | Approve, request changes, or comment chapter-by-chapter. Comments post under your VCS identity, not as a bot. |
-| **Keyboard-driven review** | Move between chapters, mark approved, and jump to the next risk without leaving the keyboard. |
-| **Multi-VCS** | GitHub, GitLab, and Bitbucket — Cloud, Enterprise, and Self-Hosted. Web-only review surface at v1. |
+| **Comprehension** | A files heatmap on the Chapters tab — tile color encodes severity, tile size encodes lines changed — plus per-chapter flow, sequence, or state diagrams. Understand the shape of the change before reading a single line. |
+| **Confidence** | A 0–100 merge-confidence score with a HIGH / MEDIUM / LOW band, sitting next to the Scope heading. The reasons behind the band surface on hover. The one number a busy engineer reads. |
+| **Compounding** | Every checklist item carries a thumbs-down. Click once and the model never raises that pattern for your workspace again. Distik sharpens to your team's review taste as you train it. |
+| **Multi-VCS** | GitHub, GitLab, and Bitbucket — Cloud, Enterprise, and Self-Hosted. Reviewing happens in Distik's web app at app.distik.dev — nothing is posted back to your PR thread. |
 
 ## Built for teams shipping AI-generated PRs
 
@@ -40,7 +40,7 @@ Distik runs as a web application at [app.distik.dev](https://app.distik.dev) for
 - **Documentation** — [docs.distik.dev](https://docs.distik.dev)
 - **App** — [app.distik.dev](https://app.distik.dev)
 - **Pricing** — [distik.dev/pricing](https://distik.dev/pricing)
-- **X / Twitter** — [@distikdev](https://x.com/distikdev)
+- **X / Twitter** — [@distik_dev](https://x.com/distik_dev)
 
 <p align="center">
   <sub>Distik <code>/ˈdɪs.tɪk/</code> — code review for AI-generated PRs.</sub>
