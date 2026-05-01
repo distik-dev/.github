@@ -43,5 +43,5 @@ Distik runs as a web application at [app.distik.dev](https://app.distik.dev) for
 - **X / Twitter** — [@distik_dev](https://x.com/distik_dev)
 
 <p align="center">
-  <sub>Distik <code>/ˈdɪs.tɪk/</code> — code review for AI-generated PRs.</sub>
+  <sub>Distik <code>/ˈdɪs.tɪk/</code> — merge-confidence for AI-generated PRs.</sub>
 </p>
