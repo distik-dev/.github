@@ -1,11 +1,12 @@
 <p align="center">
-  <img src="./assets/hero.png" alt="Distik — see every PR's blast radius before you merge" width="100%" />
+  <img src="./assets/hero.png" alt="Distik — AI code review for AI-generated pull requests" width="100%" />
 </p>
 
 <h1 align="center">Distik</h1>
 
 <p align="center">
-  <strong>See every PR's blast radius before you merge.</strong>
+  <strong>AI code review for AI-generated pull requests.</strong><br/>
+  <em>The 5% that breaks, before you ship.</em>
 </p>
 
 <p align="center">
@@ -17,31 +18,23 @@
 
 ---
 
-Reviewing a 2,000-line AI-generated pull request by skimming a flat diff misses intent, risk, and the dependency order between changes. Distik replaces that workflow with a structured review surface — every PR is decomposed into named, dependency-ordered chapters with intent and risk, then layered with a files heatmap, per-chapter diagrams, and a single merge-confidence number so a busy reviewer can read the change at a glance.
+When AI writes the PR, the human becomes the first reader. Distik reads it first — and flags the 5% that breaks before you do. It's a reviewer-augmentation layer, not an auto-approver: you stay in the loop, Distik just makes the loop faster.
 
-Distik never trains on your code. Source diffs are sent to Anthropic for chapter generation under contractual no-training terms; structured chapter analysis is cached, raw diffs are not.
+## What you get
 
-## What's inside
-
-| | |
-|---|---|
-| **Comprehension** | A files heatmap on the Chapters tab — tile color encodes severity, tile size encodes lines changed — plus per-chapter flow, sequence, or state diagrams. Understand the shape of the change before reading a single line. |
-| **Confidence** | A 0–100 merge-confidence score with a HIGH / MEDIUM / LOW band, sitting next to the Scope heading. The reasons behind the band surface on hover. The one number a busy engineer reads. |
-| **Compounding** | Every checklist item carries a thumbs-down. Click once and the model never raises that pattern for your workspace again. Distik sharpens to your team's review taste as you train it. |
-| **Multi-VCS** | GitHub, GitLab, and Bitbucket — Cloud, Enterprise, and Self-Hosted. Reviewing happens in Distik's web app at app.distik.dev — nothing is posted back to your PR thread. |
-
-## Built for teams shipping AI-generated PRs
-
-Distik runs as a web application at [app.distik.dev](https://app.distik.dev) for engineering teams reviewing pull requests authored by Cursor, Claude Code, Copilot, and similar tools. 14-day no-card trial, then $30/seat/month or $240/seat/year.
+- **Chapters.** Every PR is decomposed into named, dependency-ordered chapters with intent, a "What to review" checklist, and the diff inline. Stream them as they finish.
+- **Files heatmap + merge confidence.** Tile color encodes severity, tile size encodes lines changed. A LOW / MEDIUM / HIGH CONFIDENCE band sits in the chapters sidebar at app.distik.dev.
+- **Mark as not useful.** Workspace-scoped. One click and the pattern stops surfacing across your whole team's future PRs.
+- **Keyboard-first.** `[` and `]` move between PR detail tabs. `g c` / `g a` / `g f` jump to Chapters, Activity, and Files changed. ⌘? opens the shortcut sheet.
 
 ## Find us
 
-- **Website** — [distik.dev](https://distik.dev)
-- **Documentation** — [docs.distik.dev](https://docs.distik.dev)
-- **App** — [app.distik.dev](https://app.distik.dev)
-- **Pricing** — [distik.dev/pricing](https://distik.dev/pricing)
-- **X / Twitter** — [@distik_dev](https://x.com/distik_dev)
+- Website — [distik.dev](https://distik.dev)
+- Docs — [docs.distik.dev](https://docs.distik.dev)
+- App — [app.distik.dev](https://app.distik.dev)
+- Pricing — [distik.dev/pricing](https://distik.dev/pricing)
+- X — [@distikdev](https://x.com/distikdev)
 
 <p align="center">
-  <sub>Distik <code>/ˈdɪs.tɪk/</code> — merge-confidence for AI-generated PRs.</sub>
+  <sub>Distik <code>/ˈdɪs.tɪk/</code> — AI code review for AI-generated pull requests.</sub>
 </p>
